@@ -1,18 +1,23 @@
-import { useState } from 'react'
-import './App.css'
-import Form from 'components./Form'
-import Evento from './components/Evento'
+import './App.css';
+
+import Evento from './componentes/Evento';
+import Form from './componentes/Form';
+import Condicional from './componentes/Condicional';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className='App'>
-      <h1>Atividade 05</h1>
-      <Form />
+    <div className="App">
+      <h1>Eventos</h1>
+      
       <Evento />
+      <Condicional/>
+
+      <br />
+
+      <Form />
+
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
